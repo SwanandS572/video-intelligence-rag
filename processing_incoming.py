@@ -20,12 +20,23 @@ question_embedding = create_embeddings([incoming_query])[0]
 
 similarities = cosine_similarity(np.vstack(df['embedding']), [question_embedding]).flatten()
 # print(similarities) 
-top_results = 10
+top_results = 5
 max_index = similarities.argsort()[::-1][0:top_results]
 print(max_index)
 new_df = df.loc[max_index]
 # print(new_df[["title", "number", "text"]])
 # print(new_df[["Video_title", "Video_num", "text"]])  # ✅ Correct names
 
-for index,item in new_df.iterrows():
-    print(index,item["Video_title"],item["Video_num"],item["text"],item["start"],item["end"])
+# for index,item in new_df.iterrows():
+#     print(index,item["Video_title"],item["Video_num"],item["text"],item["start"],item["end"])
+
+prompt = f'''I am teaching web development using Sigma web development course. Here are video subtitle chunks containing video title, video number, start time in seconds, end time in seconds, the text at that time:
+
+{new_df[["Video_title", "Video_num", "start", "end", "text"]].to_json()}
+---
+{incoming_query}
+User asked this question related to the video chunks, you have to answer where and how much content is taught in which video (in which video and at what timestamp) and guide the user to go to that particular video. If user asks unrelated question, tell him that you can only answer questions related to the course
+'''
+
+with open("prompt.txt","w") as f:
+    f.write(prompt)
