@@ -20,7 +20,7 @@ question_embedding = create_embeddings([incoming_query])[0]
 
 similarities = cosine_similarity(np.vstack(df['embedding']), [question_embedding]).flatten()
 # print(similarities) 
-top_results = 3
+top_results = 10
 max_index = similarities.argsort()[::-1][0:top_results]
 print(max_index)
 new_df = df.loc[max_index]
