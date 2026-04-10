@@ -9,9 +9,18 @@ def create_embeddings(text_list):
         "model": "bge-m3",
         "input": text_list
     })
-
-    embedding = r.json()['embeddings']
+    embedding = r.json()["embeddings"]
     return embedding
+
+
+def inference(prompt):
+    r = requests.post("http://localhost:11434/api/generate", json={
+        "model": "deepseek-r1:1.5b",
+        "prompt": prompt,
+        "stream": False
+    })
+    return r.json()['response'] 
+    # print(response)
 
 df = joblib.load('embeddings.joblib')
 incoming_query = input("Ask a Question: ")
@@ -30,9 +39,9 @@ new_df = df.loc[max_index]
 # for index,item in new_df.iterrows():
 #     print(index,item["Video_title"],item["Video_num"],item["text"],item["start"],item["end"])
 
-prompt = f'''I am teaching web development using Sigma web development course. Here are video subtitle chunks containing video title, video number, start time in seconds, end time in seconds, the text at that time:
+prompt = f'''I am teaching web development in my Sigma web development course. Here are video subtitle chunks containing video title, video number, start time in seconds, end time in seconds, the text at that time:
 
-{new_df[["Video_title", "Video_num", "start", "end", "text"]].to_json()}
+{new_df[["Video_title", "Video_num", "start", "end", "text"]].to_json(orient="records")}
 ---
 {incoming_query}
 User asked this question related to the video chunks, you have to answer where and how much content is taught in which video (in which video and at what timestamp) and guide the user to go to that particular video. If user asks unrelated question, tell him that you can only answer questions related to the course
@@ -40,3 +49,9 @@ User asked this question related to the video chunks, you have to answer where a
 
 with open("prompt.txt","w") as f:
     f.write(prompt)
+
+response = inference(prompt)
+print(response)
+
+with open("response.txt","w") as f:
+    f.write(response)
