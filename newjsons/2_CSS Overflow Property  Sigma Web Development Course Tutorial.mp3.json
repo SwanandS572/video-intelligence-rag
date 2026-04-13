@@ -1,0 +1,334 @@
+{
+    "chunks": [
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 0.0,
+            "end": 16.0,
+            "text": " Let's see how the CSS box model looks like.  You can see that if there is a bit of a bit of element and content inside it,  the items inside it will be overflowing.  In this way, the overalls will be used as CSS overflow property and manage them.  In CSS, you can get scroll bars, horizontally and vertically."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 16.0,
+            "end": 28.0,
+            "text": " In this video, we will learn these things.  And we will also use its practical use in the project that we are going to do.  Let's go and keep on going.  In the bottom section, you will need to take a sigma batch.  Let's go to the video screen."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 28.0,
+            "end": 46.0,
+            "text": " Let's roll the intro.  Let's go.  So, I have already taken the video screen.  As you can see, I will make a new filter for the first work.  And I will keep the video screen in the name of this filter."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 46.0,
+            "end": 58.0,
+            "text": " Today's video is about our overflow property.  What is the overflow property?  You can use a dubber.  You have added an item inside the dubber.  Why is the dubber as big as this?"
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 58.0,
+            "end": 68.0,
+            "text": " Obviously.  Now, how do you want the overflow to be handled?  This is on you.  So, I have this box.  I am a good boy."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 68.0,
+            "end": 84.0,
+            "text": " And I love to write law.M.45.  Okay, I got it.  Obviously, you will get some good content in the box.  And you will get a style tag.  I will write the CSS in the dot box."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 84.0,
+            "end": 93.0,
+            "text": " And what will I tell you about the CSS?  I will give it a bit.  Let's give it a bit.  40vw.  Okay, I got a viewport width of 40% width."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 93.0,
+            "end": 107.0,
+            "text": " I will give it a height of 40vH.  I got a height of 40% of the viewport height.  Now, I will give it a border.  It will be too big for the black and black.  And what else can you see here?"
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 107.0,
+            "end": 122.0,
+            "text": " Obviously, I will show you in the browser.  This overflow is not done.  So, I will give it 10vH, 10vW for the overflow.  Now, I will give it 10vH, so, the society will overflow.  Or, if I give it 30vH, it will overflow."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 122.0,
+            "end": 133.0,
+            "text": " Now, because it is overflow, what I will do?  I will not fix it.  Obviously, I will try to fix it.  See, it can be fixed in two ways.  The first is to fix it."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 133.0,
+            "end": 143.0,
+            "text": " That I will use the overflow property.  Say it in some way.  Overflow.  And here, scroll.  So, if I make it overflow,"
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 143.0,
+            "end": 154.0,
+            "text": " it will be a horizontal scroll.  And, from this side, the overflow won't be overflow.  And obviously, it will come here.  And you can see here that your work is done.  So, to add a scroll,"
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 154.0,
+            "end": 166.0,
+            "text": " you can use overflow scroll.  Now, the overflow is related to all the properties.  As you have done overflow,  I can auto it here.  And, this will be the overflow."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 166.0,
+            "end": 177.0,
+            "text": " If it will overflow,  then you will see this scroll.  And if it will not overflow, you will see this scroll.  For example, if it was a viewport bit,  and it was not high,"
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 177.0,
+            "end": 185.0,
+            "text": " then there was no chance for it to overflow.  So, it is the way to auto it.  Overflow auto means that,  if you do overflow,  then show it to scroll."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 185.0,
+            "end": 195.0,
+            "text": " And if it is not overflow,  then you don't need to show it to scroll.  It is not normal to show it to you.  This is our overflow auto.  And if I tell you to scroll,"
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 195.0,
+            "end": 207.0,
+            "text": " even if everything is fine here,  then what will happen here?  You will see this scroll.  You will see this scroll.  So, always, scroll bar is a good idea."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 207.0,
+            "end": 221.0,
+            "text": " So, I hope you understood what I have to do here.  Now, if I have done white space in the node,  I will write it in the code.  I will do white space in node.  So, what will happen to node?"
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 221.0,
+            "end": 231.0,
+            "text": " White space in node, horizontally,  will take full space,  and will not text vertically.  And if I do this,  and I will do a little more."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 231.0,
+            "end": 238.0,
+            "text": " I will do it in a little bit.  I will do it in 40.  So, it will be so big.  You can see here, it is scroll bar.  I will do white space in node."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 238.0,
+            "end": 245.0,
+            "text": " It means,  don't get the text below.  Now, you can see here,  if I add ellipses in overflow,  I will show you here."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 245.0,
+            "end": 254.0,
+            "text": " Ellipses.  Now, you will see,  I have added ellipses in overflow.  So, after doing this,  I can set another property."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 254.0,
+            "end": 262.0,
+            "text": " It is called text overflow.  It has ellipses and a value,  which can be added to the dots.  You can see here.  So, white space,"
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 262.0,
+            "end": 267.0,
+            "text": " node,  or text overflow,  ellipses,  it is done.  I hope you guys understood."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 267.0,
+            "end": 273.0,
+            "text": " Okay?  I will write it once.  I will document it for a minute.  And you guys understood.  Here, we have a node here."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 273.0,
+            "end": 278.0,
+            "text": " It is overflow,  not text overflow.  So, you have to pay attention to this.  It is overflow.  Text overflow,"
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 278.0,
+            "end": 287.0,
+            "text": " property,  here, my overflow is auto.  So, I am going to see three nodes here.  If I was to hit overflow,  then I would have seen three nodes here."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 287.0,
+            "end": 296.0,
+            "text": " And if I was to scroll overflow,  then I would have seen three nodes here.  You can see.  Because I have told the text overflow  that I will do ellipses here."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 296.0,
+            "end": 304.0,
+            "text": " And if I can hit ellipses,  then you can see.  This scroll has come.  I hope you guys understood.  You can use this text overflow property"
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 304.0,
+            "end": 310.0,
+            "text": " in this way.  After this,  it is a value of overflow clip.  You can use it.  It is a value of the hidden."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 310.0,
+            "end": 316.0,
+            "text": " It is a value of overflow clip  and overflow clip.  It is almost the same.  This is the difference.  The clip is also"
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 316.0,
+            "end": 325.0,
+            "text": " scrolled programmatically.  It is also disabled.  If you have pressed overflow clip,  then you can not scroll programmatically.  Now, overflow can be handled individually."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 325.0,
+            "end": 334.0,
+            "text": " As I will do,  I will give a little text.  And I will do the infact text.  I will do this in white space.  I will do this in white space."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 334.0,
+            "end": 344.0,
+            "text": " I will go to my content.  You can see.  Now I have auto overflow.  I am not doing overflow content.  I will do high-throw DCs for overflow."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 344.0,
+            "end": 352.0,
+            "text": " I will do small DCs for this.  I will do small DCs.  I will do 30, so I will do 30.  This overflow will go.  Now I can control overflow,"
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 352.0,
+            "end": 362.0,
+            "text": " X and Y.  I can say that  I can do overflow X.  But if you do overflow Y,  then scroll."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 362.0,
+            "end": 372.0,
+            "text": " I can add individual properties.  I can add individual properties.  You can see.  I am doing overflow X and Y.  I am doing overflow Y."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 372.0,
+            "end": 382.0,
+            "text": " I am scrolling.  If I do overflow Y,  then this height will be there.  The height will be there.  I will do overflow Y."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 382.0,
+            "end": 392.0,
+            "text": " I can write overflow X and Y  with short hand.  If I write this 3-0  I will write something like this.  The overflow is"
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 392.0,
+            "end": 406.0,
+            "text": " I can do this in X and auto Y.  You can see.  I can auto Y and hit in X.  But if I do this in X and auto Y,  hit in Y and hit in X."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 406.0,
+            "end": 418.0,
+            "text": " You can see.  I can hit in Y.  I can hit in X and auto Y.  The first one is Y.  Now many people will ask me."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 418.0,
+            "end": 430.0,
+            "text": " How to remember.  What is X?  You will remember.  You will remember.  If you scroll here and hidden here,"
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 430.0,
+            "end": 440.0,
+            "text": " then you scroll overflow X.  You scroll over here.  If you scroll over here,  you will see.  I will recommend auto."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 440.0,
+            "end": 450.0,
+            "text": " You will remember.  If scroll over is needed,  you will not see.  You will not see.  You will not see."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 450.0,
+            "end": 460.0,
+            "text": " I hope you understood.  That was all about this.  I hope you understood.  That we will add scroll bars.  We will use it a lot."
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 460.0,
+            "end": 470.0,
+            "text": " When we will make real world websites.  If you haven't done the success of SIGMA or LAPAN COURSE,  then do it.  If you have done it, then do it.  And the source code is"
+        },
+        {
+            "Video_num": "2",
+            "Video_title": "CSS Overflow Property  Sigma Web Development Course Tutorial",
+            "start": 470.0,
+            "end": 486.0,
+            "text": " regularly updated.  I hope you are getting it.  Thank you so much guys for watching this video.  And I will see you next time.  Bye."
+        }
+    ],
+    "text": " Let's see how the CSS box model looks like. You can see that if there is a bit of a bit of element and content inside it, the items inside it will be overflowing. In this way, the overalls will be used as CSS overflow property and manage them. In CSS, you can get scroll bars, horizontally and vertically. In this video, we will learn these things. And we will also use its practical use in the project that we are going to do. Let's go and keep on going. In the bottom section, you will need to take a sigma batch. Let's go to the video screen. Let's roll the intro. Let's go. So, I have already taken the video screen. As you can see, I will make a new filter for the first work. And I will keep the video screen in the name of this filter. Today's video is about our overflow property. What is the overflow property? You can use a dubber. You have added an item inside the dubber. Why is the dubber as big as this? Obviously. Now, how do you want the overflow to be handled? This is on you. So, I have this box. I am a good boy. And I love to write law.M.45. Okay, I got it. Obviously, you will get some good content in the box. And you will get a style tag. I will write the CSS in the dot box. And what will I tell you about the CSS? I will give it a bit. Let's give it a bit. 40vw. Okay, I got a viewport width of 40% width. I will give it a height of 40vH. I got a height of 40% of the viewport height. Now, I will give it a border. It will be too big for the black and black. And what else can you see here? Obviously, I will show you in the browser. This overflow is not done. So, I will give it 10vH, 10vW for the overflow. Now, I will give it 10vH, so, the society will overflow. Or, if I give it 30vH, it will overflow. Now, because it is overflow, what I will do? I will not fix it. Obviously, I will try to fix it. See, it can be fixed in two ways. The first is to fix it. That I will use the overflow property. Say it in some way. Overflow. And here, scroll. So, if I make it overflow, it will be a horizontal scroll. And, from this side, the overflow won't be overflow. And obviously, it will come here. And you can see here that your work is done. So, to add a scroll, you can use overflow scroll. Now, the overflow is related to all the properties. As you have done overflow, I can auto it here. And, this will be the overflow. If it will overflow, then you will see this scroll. And if it will not overflow, you will see this scroll. For example, if it was a viewport bit, and it was not high, then there was no chance for it to overflow. So, it is the way to auto it. Overflow auto means that, if you do overflow, then show it to scroll. And if it is not overflow, then you don't need to show it to scroll. It is not normal to show it to you. This is our overflow auto. And if I tell you to scroll, even if everything is fine here, then what will happen here? You will see this scroll. You will see this scroll. So, always, scroll bar is a good idea. So, I hope you understood what I have to do here. Now, if I have done white space in the node, I will write it in the code. I will do white space in node. So, what will happen to node? White space in node, horizontally, will take full space, and will not text vertically. And if I do this, and I will do a little more. I will do it in a little bit. I will do it in 40. So, it will be so big. You can see here, it is scroll bar. I will do white space in node. It means, don't get the text below. Now, you can see here, if I add ellipses in overflow, I will show you here. Ellipses. Now, you will see, I have added ellipses in overflow. So, after doing this, I can set another property. It is called text overflow. It has ellipses and a value, which can be added to the dots. You can see here. So, white space, node, or text overflow, ellipses, it is done. I hope you guys understood. Okay? I will write it once. I will document it for a minute. And you guys understood. Here, we have a node here. It is overflow, not text overflow. So, you have to pay attention to this. It is overflow. Text overflow, property, here, my overflow is auto. So, I am going to see three nodes here. If I was to hit overflow, then I would have seen three nodes here. And if I was to scroll overflow, then I would have seen three nodes here. You can see. Because I have told the text overflow that I will do ellipses here. And if I can hit ellipses, then you can see. This scroll has come. I hope you guys understood. You can use this text overflow property in this way. After this, it is a value of overflow clip. You can use it. It is a value of the hidden. It is a value of overflow clip and overflow clip. It is almost the same. This is the difference. The clip is also scrolled programmatically. It is also disabled. If you have pressed overflow clip, then you can not scroll programmatically. Now, overflow can be handled individually. As I will do, I will give a little text. And I will do the infact text. I will do this in white space. I will do this in white space. I will go to my content. You can see. Now I have auto overflow. I am not doing overflow content. I will do high-throw DCs for overflow. I will do small DCs for this. I will do small DCs. I will do 30, so I will do 30. This overflow will go. Now I can control overflow, X and Y. I can say that I can do overflow X. But if you do overflow Y, then scroll. I can add individual properties. I can add individual properties. You can see. I am doing overflow X and Y. I am doing overflow Y. I am scrolling. If I do overflow Y, then this height will be there. The height will be there. I will do overflow Y. I can write overflow X and Y with short hand. If I write this 3-0 I will write something like this. The overflow is I can do this in X and auto Y. You can see. I can auto Y and hit in X. But if I do this in X and auto Y, hit in Y and hit in X. You can see. I can hit in Y. I can hit in X and auto Y. The first one is Y. Now many people will ask me. How to remember. What is X? You will remember. You will remember. If you scroll here and hidden here, then you scroll overflow X. You scroll over here. If you scroll over here, you will see. I will recommend auto. You will remember. If scroll over is needed, you will not see. You will not see. You will not see. I hope you understood. That was all about this. I hope you understood. That we will add scroll bars. We will use it a lot. When we will make real world websites. If you haven't done the success of SIGMA or LAPAN COURSE, then do it. If you have done it, then do it. And the source code is regularly updated. I hope you are getting it. Thank you so much guys for watching this video. And I will see you next time. Bye."
+}

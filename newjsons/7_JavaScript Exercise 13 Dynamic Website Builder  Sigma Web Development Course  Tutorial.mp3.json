@@ -1,0 +1,152 @@
+{
+    "chunks": [
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 0.0,
+            "end": 11.620000000000001,
+            "text": " In today's video, I will give you a website builder  which you can build your own website  You can tell what you want to do  I will tell you guys  And you will know the success of this video"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 11.620000000000001,
+            "end": 20.62,
+            "text": " that the dumb survey we had studied  What is the use of this video?  Like this video and in the comment section  I will write a challenge accepted  Let's roll the intro in the video"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 30.5,
+            "end": 45.0,
+            "text": " So guys, here I will make a folder  which will be our video  73 folder  And in 73 folder, I will roll a simple VS code folder  I will make an index rod"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 45.0,
+            "end": 57.0,
+            "text": " I will do a little time waste  and I will tell you the question  What I will give you a card  I will give you that card  What you want to do is"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 57.0,
+            "end": 72.0,
+            "text": " I will write a card with some data  The data inside the card must be added  When you will run a function  and you will explain what you have to do  Let me explain what you have to do"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 72.0,
+            "end": 78.0,
+            "text": " And you will also know what to do  So this is card.png  This is a PNG file  What you have to do is  This is title"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 78.0,
+            "end": 87.0,
+            "text": " This is channel name  This is number of views  And this is how old the video is  These are the cards you have designed  And this is your image"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 87.0,
+            "end": 97.0,
+            "text": " You have to put this image in  And this is the time you have to give the input  So what you have to do is  write a function  Let me make it little mode"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 97.0,
+            "end": 110.0,
+            "text": " Scrip.js  And I will also make script.js  So you have to make a function  Okay, now I don't know what you are going to write  Okay"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 110.0,
+            "end": 120.0,
+            "text": " But you guys  You have to finish this function  Okay  You guys will add one thing  And it is"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 120.0,
+            "end": 127.0,
+            "text": " Dev.container  Which contains many cards  And you guys have to use the class  .card  You guys have to use the class of the card"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 127.0,
+            "end": 139.0,
+            "text": " And you have to write it  This function  I mean you guys have to write the card  The class of the card  What will the input take?"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 139.0,
+            "end": 148.0,
+            "text": " A title  What else will it take?  What else will it take?  Channel name  So let me write C name"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 148.0,
+            "end": 156.0,
+            "text": " What else will it take?  What else will it take?  Number of views  What else will it take?  And I will tell you the number of views"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 156.0,
+            "end": 162.0,
+            "text": " That is a integer  Now I don't know how you guys will write  How you will do all this?  This is your work  Yes, the level is big"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 162.0,
+            "end": 173.0,
+            "text": " Yes, the level is big  If you are 0.007  Then you have to write it  If you are 0.007  Then you have to write 727K"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 173.0,
+            "end": 181.0,
+            "text": " If you are 0.007  Then you have to write 727M  That is your own  You are doing this in the internal function  And after this"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 181.0,
+            "end": 191.0,
+            "text": " How old is this?  So let me give this name to Manseer  I will keep this name as a months old  I can tell you that I will give you a date  And if I publish it"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 191.0,
+            "end": 201.0,
+            "text": " And you will tell me how old is this?  I am not doing it right now  Then duration  And duration is a string  You have to write it as it is"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 201.0,
+            "end": 213.0,
+            "text": " So I will show you a sample call  So in create card  You will get  Sigma  Web dev video"
+        },
+        {
+            "Video_num": "7",
+            "Video_title": "JavaScript Exercise 13 Dynamic Website Builder  Sigma Web Development Course  Tutorial",
+            "start": 213.0,
+            "end": 215.0,
+            "text": " Number 2  I will show you the title of video"
+        }
+    ],
+    "text": " In today's video, I will give you a website builder which you can build your own website You can tell what you want to do I will tell you guys And you will know the success of this video that the dumb survey we had studied What is the use of this video? Like this video and in the comment section I will write a challenge accepted Let's roll the intro in the video So guys, here I will make a folder which will be our video 73 folder And in 73 folder, I will roll a simple VS code folder I will make an index rod I will do a little time waste and I will tell you the question What I will give you a card I will give you that card What you want to do is I will write a card with some data The data inside the card must be added When you will run a function and you will explain what you have to do Let me explain what you have to do And you will also know what to do So this is card.png This is a PNG file What you have to do is This is title This is channel name This is number of views And this is how old the video is These are the cards you have designed And this is your image You have to put this image in And this is the time you have to give the input So what you have to do is write a function Let me make it little mode Scrip.js And I will also make script.js So you have to make a function Okay, now I don't know what you are going to write Okay But you guys You have to finish this function Okay You guys will add one thing And it is Dev.container Which contains many cards And you guys have to use the class .card You guys have to use the class of the card And you have to write it This function I mean you guys have to write the card The class of the card What will the input take? A title What else will it take? What else will it take? Channel name So let me write C name What else will it take? What else will it take? Number of views What else will it take? And I will tell you the number of views That is a integer Now I don't know how you guys will write How you will do all this? This is your work Yes, the level is big Yes, the level is big If you are 0.007 Then you have to write it If you are 0.007 Then you have to write 727K If you are 0.007 Then you have to write 727M That is your own You are doing this in the internal function And after this How old is this? So let me give this name to Manseer I will keep this name as a months old I can tell you that I will give you a date And if I publish it And you will tell me how old is this? I am not doing it right now Then duration And duration is a string You have to write it as it is So I will show you a sample call So in create card You will get Sigma Web dev video Number 2 I will show you the title of video"
+}

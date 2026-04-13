@@ -18,13 +18,13 @@ def create_embeddings(text_list):
 # a=create_embeddings("Cat sat on the mat")
 # print(a)
 
-jsons = os.listdir("jsons") # List all the jsons
+jsons = os.listdir("newjsons") # List all the jsons
 # print(jsons)
 mydicts=[]
 chunk_id = 0
 
 for j in jsons:
-    with open(f"jsons/{j}") as f:
+    with open(f"newjsons/{j}") as f:
         content = json.load(f)
     print(f"Creating Embeddings for {j} file")
     embeddings = create_embeddings([c['text'] for c in content['chunks']])

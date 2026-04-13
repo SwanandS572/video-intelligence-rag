@@ -1,0 +1,369 @@
+{
+    "chunks": [
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 0.0,
+            "end": 15.6,
+            "text": " What happened? You guys are back in Sigma Web Development course.  I am really happy that you guys have given so much love to this course.  You guys like this high energy.  Because for Sigma Free course, this is the likes of Sigma Chats.  In today's video, I will explain to you guys basic structure."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 15.6,
+            "end": 32.64,
+            "text": " I will explain to you guys in a website.  In that website, you guys will learn a mobile trick.  You will learn that you can preview your phone from your website.  You guys can tell me in the comments section that you can get HTML or not.  That will help me structure this course better."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 32.64,
+            "end": 47.28,
+            "text": " In this video, I will explain the impact of 4GBD.  Because it is very fast about 4GBD.  In the coming videos, I will also give you guys quizzes.  So learn this video carefully and understand all the concepts.  Let's go to the computer screen and let's roll the internet."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 55.839999999999996,
+            "end": 73.64,
+            "text": " So guys, I am in the computer screen.  Now we will talk about how to use the object text,  the structure of the object text.  So here, I will make a new folder in my folder.  I will open the video and click on the open width code."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 73.64,
+            "end": 86.64,
+            "text": " And you guys can see that my theme is blue color.  And many people said that blue is not good.  Look, the theme is the choice of your choice.  If you want to change the color theme,  then you can change the color theme."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 86.64,
+            "end": 99.36,
+            "text": " I will use the dark color of the grid up.  You can use dark color.  For a new file, I will add index.html.  We already talked about this.  Here, I will write the title of the page and the content."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 99.36,
+            "end": 115.36,
+            "text": " And then I will use the link tag.  I can use the MET and write the style.css.  That's why I am taking it.  And if I write the script.js here.  And then I will write the alert from the alert."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 115.36,
+            "end": 128.56,
+            "text": " So I will not tell you the exact same thing.  Here, I have put the script tag here.  I have just put the script in the body.  Then I will put the script in the form of the script.js.  And then I will click here and open width browser."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 128.56,
+            "end": 140.56,
+            "text": " So this will come here.  And if I write the background red here, then it will be red.  I will not tell you all this.  Because I have already told you guys.  I will tell you guys now that what is the structure of this structure?"
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 140.56,
+            "end": 150.72,
+            "text": " Why did you write so much?  This is a doubt.  We can write the title and the content directly.  What is the need to write so much?  So I will tell you how much you need to write."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 150.72,
+            "end": 160.92000000000002,
+            "text": " I will reload it.  Look, the content here is here.  It is red here.  Now you will see that I need to reload the page.  Some people ask me why to reload the page."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 160.92000000000002,
+            "end": 170.64000000000001,
+            "text": " When I reload the page already.  So I changed the CSS file.  When I change CSS file,  I need to reload at the time.  If you are using HTML file, you are changing it."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 170.64,
+            "end": 184.07999999999998,
+            "text": " You will not need to reload the changes of HTML file.  Now I will come back and I will explain.  This is a basic structure.  We write HTML website.  First of all, we write the doc type HTML."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 184.07999999999998,
+            "end": 195.92,
+            "text": " Then write HTML tag.  Look, this HTML tag is opening tag or closing tag.  This is the opening tag of the body or closing tag.  This is the opening tag or closing tag of the head.  This is the content of the head."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 195.92,
+            "end": 208.64,
+            "text": " HTML content is the content of the head.  The title content is the content of the head.  Now what is the content of the head?  The head is a self closing tag.  There are two types of tags in HTML."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 208.64,
+            "end": 216.88,
+            "text": " One is self closing tag.  And the other is the pair tag.  What is the pair tag?  The opening tag is the closing tag.  This is the basic structure HTML website."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 216.88,
+            "end": 227.68,
+            "text": " Now you will see that background red is the background red.  This is the background red.  This is the background red.  If I remove the CSS file from here and say it quickly.  What will I say?"
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 227.84,
+            "end": 235.44,
+            "text": " Remove it quickly.  And as I will say it quickly.  I will have to remove it from here.  I will reload the page.  You can see here that it is removed."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 235.44,
+            "end": 243.84,
+            "text": " In this way, I can also say JavaScript.  Remove it quickly.  You can see that I have also become an alert.  Okay.  So you can also reload it."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 243.84,
+            "end": 257.6,
+            "text": " So this is an alert.  This HTML content in CSS and JavaScript was added.  This is additionally CSS and JavaScript functionalities.  We used this HTML page to link it.  And I already told you about the title tag."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 257.6,
+            "end": 271.6,
+            "text": " This is used to set the page title.  Now it is not necessary to give you the title here.  The search engines use this.  The search engines are Google.  If you will write here code with Harry HTML."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 271.6,
+            "end": 286.8,
+            "text": " So code with Harry's HTML introduction, HTML working.  All the titles I have added are in the background.  You can see here the HTML introduction is the title of the page.  So these titles are used in search engines and parsed.  Now I will change the page."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 286.8,
+            "end": 298.8,
+            "text": " So HTML working is the title.  Now I will change the page.  You can see here the HTML installation is the title.  So titles are changed.  As I will change it, it will be changed."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 298.8,
+            "end": 310.8,
+            "text": " As you can see.  So HTML pages have not been used only for title.  You can see here.  This is also used in SEO.  And let's tell you what is the content in the page."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 310.8,
+            "end": 320.8,
+            "text": " These people describe the page content.  So I am knowing what is the HTML execution.  What is the HTML execution?  How does HTML execute?  So the title of the page is very good."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 320.8,
+            "end": 330.8,
+            "text": " So we will make a website from any framework.  We will change the page title.  Now here the head section.  The title of the page is the metadata.  You can see the title."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 330.8,
+            "end": 340.8,
+            "text": " And you can see the link to the conscript.  You can see the link to the conscript.  And also the meta tags.  I will tell you about them.  The meta tags are basically the document."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 340.8,
+            "end": 358.8,
+            "text": " HTML document is about the description.  The meta description is a very important keyword.  You can write it in the page.  If you go to my website, you will get a view of the page.  The meta description tag is in the video."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 358.8,
+            "end": 374.8,
+            "text": " You can see the meta description tag.  If you talk about Google, the meta description is in the video.  I want to show you the document.  The document is in the header.  The tag is in the header."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 374.8,
+            "end": 388.8,
+            "text": " The tag is in the header.  The tag is in the header.  You can also put the tag in the header.  And what differences will I talk about in the course?  I used the link to use CSS."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 388.8,
+            "end": 417.34000000000003,
+            "text": " The main content of the page is the main content.  To this page, you will\u4f38 similar photos on the page.  Wait a bit.  In the spot where you download the link, the eddies will need to be executed successfully.  Now\u3084\u306f\u3058\u3081\u306e"
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 417.34,
+            "end": 441.46,
+            "text": " The buttons, buttons and buttons of the exhaust, have access to other computers which will be used in specific PRC options,  Menu,\u00e1zoto and Audio.  What is the use of the attribute?  Most of the content in the body is the HTML raw.  You copy it."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 441.46,
+            "end": 451.46,
+            "text": " You copy it from the website.  You copy the source code.  If I talk about the forms,  You copy it in the HTML forms page.  You copy it."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 451.46,
+            "end": 461.46,
+            "text": " You will modify your form.  You have to copy it.  It is very important.  As a senior developer,  You should know where to copy and when to copy it."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 461.46,
+            "end": 473.46,
+            "text": " You will always be the same.  You copy it or copy it.  You will prefer to copy it.  Because the form will be changed.  If you copy paste,"
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 473.46,
+            "end": 483.46,
+            "text": " You will save your time.  You have to put your innovation in mind.  You can't copy it.  As a senior developer,  You will copy paste."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 483.46,
+            "end": 495.46,
+            "text": " You have to put your innovation in mind.  You have to put your innovation in mind.  You can't copy paste.  The most important part of being a senior developer,  Is to where to copy paste from."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 495.46,
+            "end": 505.46,
+            "text": " Which stack of our people?  Which stack of our people?  And how to paste it from where to copy the code?  That is Rs.200, Rs.25, Rs.25, Rs.25.  You understand?"
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 505.46,
+            "end": 515.46,
+            "text": " I have told my copy statement.  But I have given it a lot of time.  Now I will tell you about a technique  Which you will develop here.  You will see in this mobile."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 515.46,
+            "end": 525.46,
+            "text": " Now, listen carefully to the steps.  Right click, terminal open.  And write IP config.  If you are in the old version,  You can open the command prompt or power shell."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 525.46,
+            "end": 535.46,
+            "text": " Like you will enter the IP config,  You will see IPv4 address.  1921681199  Now I will copy the IP address.  I will copy the IPv4 address."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 535.46,
+            "end": 545.46,
+            "text": " And write in my settings.  Live preview.  This local IP host address  To host your files on this place.  I will write it on its place."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 545.46,
+            "end": 561.46,
+            "text": " And then I will restart my VSCode.  You will have to ensure that you go to your Wi-Fi settings.  You can use the network to network private.  It is not a public network.  It is a private network."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 561.46,
+            "end": 571.46,
+            "text": " You can connect it via Wi-Fi.  And now you will see the show preview.  You will see your IP address.  You will see the slash index.  I can use this on my phone."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 571.46,
+            "end": 583.46,
+            "text": " I will put this IP address here.  I have put 1921681199  You can get a total of 5000.  You can also put the IP address.  And you can see here."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 583.46,
+            "end": 595.46,
+            "text": " The website is previewed in the mobile.  This trick is very useful.  When we want to preview our mobile.  Today, we will see more websites in the phone.  So, we will try to use the phone."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 595.46,
+            "end": 607.46,
+            "text": " It can be a good way to turn on our website.  And we will do the development in the computer.  So, it will be tested.  If you have not put the review in the first video.  I will request you to review your course."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 607.46,
+            "end": 617.46,
+            "text": " I have told you in the last video.  Please review it.  I have put a initial review.  How did you like it?  You will see the initial review."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 617.46,
+            "end": 627.46,
+            "text": " You will see the initial review.  Start with the playlist description.  Do access it.  Click here.  You will get the bookmark."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 627.46,
+            "end": 637.46,
+            "text": " And you will get the show.  I have booked the sigma web development course.  Click here.  You can save it.  I want to access all the players."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 637.46,
+            "end": 647.46,
+            "text": " You can book the playlist.  You can also access the playlist.  Like the video.  You can download the game.  Thank you so much for watching this video."
+        },
+        {
+            "Video_num": "1",
+            "Video_title": "Basic Structure of an HTML Website  Sigma Web Development Course Tutorial",
+            "start": 647.46,
+            "end": 661.46,
+            "text": " And I will see you next time.  Bye."
+        }
+    ],
+    "text": " What happened? You guys are back in Sigma Web Development course. I am really happy that you guys have given so much love to this course. You guys like this high energy. Because for Sigma Free course, this is the likes of Sigma Chats. In today's video, I will explain to you guys basic structure. I will explain to you guys in a website. In that website, you guys will learn a mobile trick. You will learn that you can preview your phone from your website. You guys can tell me in the comments section that you can get HTML or not. That will help me structure this course better. In this video, I will explain the impact of 4GBD. Because it is very fast about 4GBD. In the coming videos, I will also give you guys quizzes. So learn this video carefully and understand all the concepts. Let's go to the computer screen and let's roll the internet. So guys, I am in the computer screen. Now we will talk about how to use the object text, the structure of the object text. So here, I will make a new folder in my folder. I will open the video and click on the open width code. And you guys can see that my theme is blue color. And many people said that blue is not good. Look, the theme is the choice of your choice. If you want to change the color theme, then you can change the color theme. I will use the dark color of the grid up. You can use dark color. For a new file, I will add index.html. We already talked about this. Here, I will write the title of the page and the content. And then I will use the link tag. I can use the MET and write the style.css. That's why I am taking it. And if I write the script.js here. And then I will write the alert from the alert. So I will not tell you the exact same thing. Here, I have put the script tag here. I have just put the script in the body. Then I will put the script in the form of the script.js. And then I will click here and open width browser. So this will come here. And if I write the background red here, then it will be red. I will not tell you all this. Because I have already told you guys. I will tell you guys now that what is the structure of this structure? Why did you write so much? This is a doubt. We can write the title and the content directly. What is the need to write so much? So I will tell you how much you need to write. I will reload it. Look, the content here is here. It is red here. Now you will see that I need to reload the page. Some people ask me why to reload the page. When I reload the page already. So I changed the CSS file. When I change CSS file, I need to reload at the time. If you are using HTML file, you are changing it. You will not need to reload the changes of HTML file. Now I will come back and I will explain. This is a basic structure. We write HTML website. First of all, we write the doc type HTML. Then write HTML tag. Look, this HTML tag is opening tag or closing tag. This is the opening tag of the body or closing tag. This is the opening tag or closing tag of the head. This is the content of the head. HTML content is the content of the head. The title content is the content of the head. Now what is the content of the head? The head is a self closing tag. There are two types of tags in HTML. One is self closing tag. And the other is the pair tag. What is the pair tag? The opening tag is the closing tag. This is the basic structure HTML website. Now you will see that background red is the background red. This is the background red. This is the background red. If I remove the CSS file from here and say it quickly. What will I say? Remove it quickly. And as I will say it quickly. I will have to remove it from here. I will reload the page. You can see here that it is removed. In this way, I can also say JavaScript. Remove it quickly. You can see that I have also become an alert. Okay. So you can also reload it. So this is an alert. This HTML content in CSS and JavaScript was added. This is additionally CSS and JavaScript functionalities. We used this HTML page to link it. And I already told you about the title tag. This is used to set the page title. Now it is not necessary to give you the title here. The search engines use this. The search engines are Google. If you will write here code with Harry HTML. So code with Harry's HTML introduction, HTML working. All the titles I have added are in the background. You can see here the HTML introduction is the title of the page. So these titles are used in search engines and parsed. Now I will change the page. So HTML working is the title. Now I will change the page. You can see here the HTML installation is the title. So titles are changed. As I will change it, it will be changed. As you can see. So HTML pages have not been used only for title. You can see here. This is also used in SEO. And let's tell you what is the content in the page. These people describe the page content. So I am knowing what is the HTML execution. What is the HTML execution? How does HTML execute? So the title of the page is very good. So we will make a website from any framework. We will change the page title. Now here the head section. The title of the page is the metadata. You can see the title. And you can see the link to the conscript. You can see the link to the conscript. And also the meta tags. I will tell you about them. The meta tags are basically the document. HTML document is about the description. The meta description is a very important keyword. You can write it in the page. If you go to my website, you will get a view of the page. The meta description tag is in the video. You can see the meta description tag. If you talk about Google, the meta description is in the video. I want to show you the document. The document is in the header. The tag is in the header. The tag is in the header. The tag is in the header. You can also put the tag in the header. And what differences will I talk about in the course? I used the link to use CSS. The main content of the page is the main content. To this page, you will\u4f38 similar photos on the page. Wait a bit. In the spot where you download the link, the eddies will need to be executed successfully. Now\u3084\u306f\u3058\u3081\u306e The buttons, buttons and buttons of the exhaust, have access to other computers which will be used in specific PRC options, Menu,\u00e1zoto and Audio. What is the use of the attribute? Most of the content in the body is the HTML raw. You copy it. You copy it from the website. You copy the source code. If I talk about the forms, You copy it in the HTML forms page. You copy it. You will modify your form. You have to copy it. It is very important. As a senior developer, You should know where to copy and when to copy it. You will always be the same. You copy it or copy it. You will prefer to copy it. Because the form will be changed. If you copy paste, You will save your time. You have to put your innovation in mind. You can't copy it. As a senior developer, You will copy paste. You have to put your innovation in mind. You have to put your innovation in mind. You can't copy paste. The most important part of being a senior developer, Is to where to copy paste from. Which stack of our people? Which stack of our people? And how to paste it from where to copy the code? That is Rs.200, Rs.25, Rs.25, Rs.25. You understand? I have told my copy statement. But I have given it a lot of time. Now I will tell you about a technique Which you will develop here. You will see in this mobile. Now, listen carefully to the steps. Right click, terminal open. And write IP config. If you are in the old version, You can open the command prompt or power shell. Like you will enter the IP config, You will see IPv4 address. 1921681199 Now I will copy the IP address. I will copy the IPv4 address. And write in my settings. Live preview. This local IP host address To host your files on this place. I will write it on its place. And then I will restart my VSCode. You will have to ensure that you go to your Wi-Fi settings. You can use the network to network private. It is not a public network. It is a private network. You can connect it via Wi-Fi. And now you will see the show preview. You will see your IP address. You will see the slash index. I can use this on my phone. I will put this IP address here. I have put 1921681199 You can get a total of 5000. You can also put the IP address. And you can see here. The website is previewed in the mobile. This trick is very useful. When we want to preview our mobile. Today, we will see more websites in the phone. So, we will try to use the phone. It can be a good way to turn on our website. And we will do the development in the computer. So, it will be tested. If you have not put the review in the first video. I will request you to review your course. I have told you in the last video. Please review it. I have put a initial review. How did you like it? You will see the initial review. You will see the initial review. Start with the playlist description. Do access it. Click here. You will get the bookmark. And you will get the show. I have booked the sigma web development course. Click here. You can save it. I want to access all the players. You can book the playlist. You can also access the playlist. Like the video. You can download the game. Thank you so much for watching this video. And I will see you next time. Bye."
+}
