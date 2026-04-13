@@ -1,7 +1,1 @@
-You can find information about background colors in the following videos:
-
-Video 4, "Introduction to CSS Sigma Web Development Course Tutorial", from 315.38 seconds to 325.38 seconds, discusses setting the background color to yellow.
-Video 4, "Introduction to CSS Sigma Web Development Course Tutorial", from 385.38 seconds to 394.38 seconds, mentions setting the background color to yellow.
-Video 1, "Basic Structure of an HTML Website Sigma Web Development Course Tutorial", from 216.88 seconds to 227.68 seconds, talks about the background red.
-Video 4, "Introduction to CSS Sigma Web Development Course Tutorial", from 265.38 seconds to 275.38 seconds, shows how to color the Dev red.
-Video 4, "Introduction to CSS Sigma Web Development Course Tutorial", from 325.38 seconds to 335.38 seconds, mentions matching an element's background.
+The overflow property is taught in Video 2. You can find information about it starting at timestamp 0:46. The video also discusses specific uses of the overflow property at 1:33 (overflow scroll), 2:45 (overflow ellipses), 3:04 (overflow clip/hidden), 3:34 (auto overflow/overflow content), and 3:62 (overflow X and Y). You can find all these segments in Video 2.
