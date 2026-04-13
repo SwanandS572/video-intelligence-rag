@@ -1,6 +1,6 @@
 # 🤖 RAG-Based Video Intelligence System
 
-> An intelligent, video-aware Q&A system that answers natural language questions over course content — returning **exact video numbers and timestamps** using Retrieval-Augmented Generation (RAG).
+> An intelligent, video-aware Q&A system that answers natural language questions over video content — returning **exact video numbers and timestamps** using Retrieval-Augmented Generation (RAG).
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
 <!-- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) -->
