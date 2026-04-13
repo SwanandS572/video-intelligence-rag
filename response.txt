@@ -1,7 +1,0 @@
-To add different background colors to sections, you can use CSS. This is covered in the following videos:
-
-Video 1, starting at 128.56 seconds: The instructor explains how to set a background color to red for an element.
-Video 4, starting at 315.38 seconds: The instructor shows an example of setting a background color to yellow.
-Video 4, starting at 385.38 seconds: The instructor demonstrates applying a background color to yellow using selectors.
-
-You can refer to these segments in Video 1 and Video 4 for guidance on how to style your website sections with different background colors.
