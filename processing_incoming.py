@@ -43,7 +43,7 @@ similarities = cosine_similarity(np.vstack(df['embedding']), [question_embedding
 # print(similarities) 
 top_results = 10
 max_index = similarities.argsort()[::-1][0:top_results]
-print(max_index)
+# print(max_index)
 new_df = df.loc[max_index]
 # print(new_df[["title", "number", "text"]])
 # print(new_df[["Video_title", "Video_num", "text"]])  # ✅ Correct names
