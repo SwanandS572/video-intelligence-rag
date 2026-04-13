@@ -61,9 +61,10 @@ new_df = df.loc[max_index]
 
 prompt = f'''I am teaching web development in my Sigma web development course. Here are video subtitle chunks containing video title, video number, start time in seconds, end time in seconds, the text at that time:
 
-{new_df[["Video_title", "Video_num", "start", "end", "text"]].to_json(orient="records")}
----
 Question: {incoming_query}
+---
+
+{new_df[["Video_title", "Video_num", "start", "end", "text"]].to_json(orient="records")}
 
 Answer where and how much content is taught in which video (video number and timestamp). Guide the user to go to that particular video. If the user asks an unrelated question, politely tell them you can only answer questions related to the Sigma Web Development course.
 
