@@ -1,1 +1,16 @@
-The overflow property is taught in Video 2. You can find information about it starting at timestamp 0:46. The video also discusses specific uses of the overflow property at 1:33 (overflow scroll), 2:45 (overflow ellipses), 3:04 (overflow clip/hidden), 3:34 (auto overflow/overflow content), and 3:62 (overflow X and Y). You can find all these segments in Video 2.
+To learn about background colors, you can refer to the following videos in the Sigma Web Development Course:
+
+Video 1, "Basic Structure of an HTML Website":
+- From 128.56 to 140.56 seconds, the video explains how to set a background color to red.
+- From 216.88 to 227.68 seconds, the video demonstrates setting the background color to red and removing CSS.
+
+Video 4, "Introduction to CSS":
+- From 265.38 to 275.38 seconds, the video mentions setting the Dev color to red.
+- From 305.38 to 315.38 seconds, the video explains setting the Dev color to red.
+- From 315.38 to 325.38 seconds, the video shows how to add another declaration to set the background color to yellow.
+- From 385.38 to 394.38 seconds, the video discusses setting the background color to yellow.
+- From 394.38 to 404.38 seconds, the video touches upon colors as properties.
+
+Additionally, Video 3, "Exercise 4 Multi Color Website", from 68.0 to 81.0 seconds, mentions using global variables for colors and CSS variables for a multi-colored website.
+
+Please go to the specified videos and timestamps to learn more about background colors.
