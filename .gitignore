@@ -4,6 +4,7 @@ __pycache__/
 
 # Configuration (API keys)
 config.py
+count_all_chunks.py
 
 # Large data folders
 videos/
