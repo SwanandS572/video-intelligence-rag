@@ -17,9 +17,18 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-html, body, [class*="css"], .stMarkdown, p, span, div {
-    font-family: 'Inter', sans-serif !important;
+html, body {
+    font-family: 'Inter', sans-serif;
 }
+
+.stApp {
+    font-family: 'Inter', sans-serif;
+}
+
+p, span, div {
+    font-family: inherit;
+}
+            
 .block-container {
     padding: 2rem 3rem 4rem !important;
     max-width: 1140px !important;
@@ -173,14 +182,60 @@ div[data-testid="stButton"] > button:hover {
     border-color: rgba(128,128,128,0.4) !important;
     background: rgba(128,128,128,0.1) !important;
 }
-div[data-testid="stTextInput"] input {
-    font-family: 'Inter', sans-serif !important;
-    font-size: 0.93rem !important; border-radius: 10px !important;
-    border: 1px solid rgba(128,128,128,0.25) !important;
-    background: rgba(128,128,128,0.04) !important;
-    padding: 0.65rem 1rem !important;
+/* ---------- CLEAN STREAMLIT INPUT FIX ---------- */
+
+div[data-testid="stTextInput"] {
+    margin-bottom: 1rem !important;
 }
-div[data-testid="stTextInput"] input:focus {
+
+/* Hide duplicate floating label */
+div[data-testid="stTextInput"] label {
+    display: none !important;
+}
+
+/* Main wrapper */
+div[data-baseweb="base-input"] {
+    background: rgba(128,128,128,0.04) !important;
+
+    border: 1px solid rgba(128,128,128,0.25) !important;
+    border-radius: 10px !important;
+
+    min-height: 48px !important;
+    height: 48px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    overflow: hidden !important;
+}
+
+/* Input element */
+div[data-baseweb="base-input"] input {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+
+    height: 100% !important;
+    width: 100% !important;
+
+    padding: 0 14px !important;
+
+    background: transparent !important;
+
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+    line-height: normal !important;
+}
+
+/* Remove pseudo overlays */
+div[data-baseweb="base-input"]::before,
+div[data-baseweb="base-input"]::after {
+    display: none !important;
+}
+
+/* Focus */
+div[data-baseweb="base-input"]:focus-within {
     border-color: rgba(128,128,128,0.5) !important;
     box-shadow: 0 0 0 3px rgba(128,128,128,0.08) !important;
 }
@@ -278,20 +333,25 @@ EXAMPLES_SHORT = ["Where is SSR taught?","What is CSS Overflow?","How to use use
 EXAMPLES_FULL  = ["Where is SSR (Server Side Rendering) taught?","What is CSS Overflow property?","How to use useState in React?","Explain JavaScript Promises","What is Flexbox and how does it work?"]
 
 st.markdown('<p class="sec-label">Try an example</p>', unsafe_allow_html=True)
-if "query" not in st.session_state:
-    st.session_state.query = ""
 
 ecols = st.columns(len(EXAMPLES_SHORT))
-for i,(short,full) in enumerate(zip(EXAMPLES_SHORT,EXAMPLES_FULL)):
+
+for i, (short, full) in enumerate(zip(EXAMPLES_SHORT, EXAMPLES_FULL)):
     with ecols[i]:
         if st.button(short, key=f"ex_{i}"):
-            st.session_state.query = full
+            st.session_state["query_input"] = full
             st.rerun()
 
-st.markdown('<p class="sec-label" style="margin-top:1.25rem">Your question</p>', unsafe_allow_html=True)
-query = st.text_input(label="", value=st.session_state.query,
+st.markdown(
+    '<p class="sec-label" style="margin-top:1.25rem">Your question</p>',
+    unsafe_allow_html=True
+)
+
+query = st.text_input(
+    label="search_box",
     placeholder="e.g. How do I create a responsive navbar using CSS Grid?",
-    label_visibility="collapsed")
+    key="query_input"
+)
 
 if query:
     with st.spinner("Searching…"):
@@ -355,4 +415,4 @@ Give a clear, direct answer. Mention the video number and timestamp (mm:ss) wher
             st.markdown(r["text"])
             st.markdown('<hr class="rag-hr">', unsafe_allow_html=True)
 
-st.markdown('<div class="rag-footer">RAG Video Intelligence &nbsp;\u00b7&nbsp; Gemini AI + Cosine Similarity &nbsp;\u00b7&nbsp; Built by Swanand Sinnarkar</div>', unsafe_allow_html=True)
+st.markdown('<div class="rag-footer">RAG Video Intelligence &nbsp;\u00b7&nbsp; Built by Swanand Sinnarkar</div>', unsafe_allow_html=True)
