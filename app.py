@@ -6,142 +6,353 @@ import os
 from google import genai
 from sklearn.metrics.pairwise import cosine_similarity
 
-# ⚠️ MUST BE FIRST - before any other st.xxx commands
-st.set_page_config(page_title="RAG Video Assistant", page_icon="🤖")
+st.set_page_config(
+    page_title="RAG Video Intelligence",
+    page_icon="🎬",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
-# Now you can do other Streamlit commands
-st.title("🤖 RAG Video Intelligence System")
-st.caption("Ask any question — get exact video number and timestamp")
+st.markdown("""
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-# Get API key - check local config.py FIRST, then HF secrets
+html, body, [class*="css"], .stMarkdown, p, span, div {
+    font-family: 'Inter', sans-serif !important;
+}
+.block-container {
+    padding: 2rem 3rem 4rem !important;
+    max-width: 1140px !important;
+}
+section[data-testid="stSidebar"] .block-container {
+    padding: 1.5rem 1.25rem !important;
+}
+.rag-header {
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.75rem;
+    border-bottom: 1px solid rgba(128,128,128,0.15);
+}
+.rag-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin: 0 0 0.3rem;
+    color: inherit;
+}
+.rag-subtitle {
+    font-size: 0.92rem;
+    opacity: 0.5;
+    margin: 0;
+    font-weight: 400;
+}
+.status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: rgba(34,197,94,0.1);
+    color: #22c55e;
+    border: 1px solid rgba(34,197,94,0.25);
+    border-radius: 999px;
+    padding: 5px 14px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.01em;
+}
+.status-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #22c55e; box-shadow: 0 0 6px #22c55e;
+    display: inline-block; flex-shrink: 0;
+}
+.stats-grid {
+    display: grid; grid-template-columns: repeat(3,1fr);
+    gap: 10px; margin-bottom: 2rem;
+}
+.stat-box {
+    border: 1px solid rgba(128,128,128,0.18);
+    border-radius: 12px; padding: 1.1rem 1.25rem;
+    background: rgba(128,128,128,0.04);
+}
+.stat-val {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.7rem; font-weight: 700;
+    letter-spacing: -0.03em; line-height: 1;
+    margin-bottom: 5px; color: inherit;
+}
+.stat-lbl {
+    font-size: 0.7rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.4;
+}
+.sec-label {
+    font-size: 0.7rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.09em;
+    opacity: 0.4; margin: 0 0 0.65rem;
+}
+.answer-box {
+    border: 1px solid rgba(128,128,128,0.18);
+    border-radius: 12px; padding: 1.15rem 1.4rem;
+    font-size: 0.93rem; line-height: 1.75;
+    margin-bottom: 1.75rem;
+    background: rgba(128,128,128,0.04);
+}
+.vid-group {
+    display: flex; align-items: center;
+    gap: 10px; margin: 1.5rem 0 0.65rem;
+}
+.vid-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.05em; padding: 3px 9px;
+    border-radius: 6px; background: rgba(128,128,128,0.12);
+    opacity: 0.8; white-space: nowrap;
+}
+.vid-name { font-size: 0.97rem; font-weight: 600; opacity: 0.9; }
+.chunk {
+    border: 1px solid rgba(128,128,128,0.15);
+    border-radius: 10px; padding: 0.9rem 1.1rem;
+    margin-bottom: 8px; background: rgba(128,128,128,0.03);
+    transition: border-color 0.15s;
+}
+.chunk:hover { border-color: rgba(128,128,128,0.3); }
+.chunk-meta {
+    display: flex; align-items: center;
+    gap: 8px; margin-bottom: 0.55rem; flex-wrap: wrap;
+}
+.ts {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.73rem; font-weight: 500;
+    padding: 2px 8px; border-radius: 5px;
+    background: rgba(128,128,128,0.1); opacity: 0.75; white-space: nowrap;
+}
+.badge-high {
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em;
+    padding: 2px 9px; border-radius: 999px;
+    background: rgba(34,197,94,0.12); color: #22c55e;
+    border: 1px solid rgba(34,197,94,0.2);
+}
+.badge-med {
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em;
+    padding: 2px 9px; border-radius: 999px;
+    background: rgba(234,179,8,0.1); color: #ca8a04;
+    border: 1px solid rgba(234,179,8,0.2);
+}
+.badge-low {
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em;
+    padding: 2px 9px; border-radius: 999px;
+    background: rgba(239,68,68,0.1); color: #ef4444;
+    border: 1px solid rgba(239,68,68,0.2);
+}
+.score-pct {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem; opacity: 0.3; margin-left: auto;
+}
+.chunk-text { font-size: 0.88rem; line-height: 1.65; opacity: 0.75; margin: 0; }
+.rag-hr { border: none; border-top: 1px solid rgba(128,128,128,0.12); margin: 1.75rem 0; }
+.sb-label {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.09em;
+    opacity: 0.35; margin: 1.25rem 0 0.5rem;
+}
+.sb-about { font-size: 0.83rem; line-height: 1.6; opacity: 0.6; }
+.tech-item {
+    display: flex; justify-content: space-between;
+    align-items: center; padding: 6px 0;
+    border-bottom: 1px solid rgba(128,128,128,0.1);
+    font-size: 0.82rem;
+}
+.tech-k { opacity: 0.45; }
+.tech-v { font-weight: 600; opacity: 0.85; font-size: 0.8rem; }
+.rag-footer {
+    text-align: center; margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(128,128,128,0.1);
+    font-size: 0.75rem; opacity: 0.25; letter-spacing: 0.03em;
+}
+
+div[data-testid="stButton"] > button:hover {
+    border-color: rgba(128,128,128,0.4) !important;
+    background: rgba(128,128,128,0.1) !important;
+}
+div[data-testid="stTextInput"] input {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 0.93rem !important; border-radius: 10px !important;
+    border: 1px solid rgba(128,128,128,0.25) !important;
+    background: rgba(128,128,128,0.04) !important;
+    padding: 0.65rem 1rem !important;
+}
+div[data-testid="stTextInput"] input:focus {
+    border-color: rgba(128,128,128,0.5) !important;
+    box-shadow: 0 0 0 3px rgba(128,128,128,0.08) !important;
+}
+div[data-testid="stMetric"] {
+    border: 1px solid rgba(128,128,128,0.15) !important;
+    border-radius: 10px !important; padding: 0.85rem 1rem !important;
+    background: rgba(128,128,128,0.03) !important;
+}
+div[data-testid="stMetric"] label {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 0.72rem !important; font-weight: 600 !important;
+    letter-spacing: 0.06em !important; text-transform: uppercase !important;
+    opacity: 0.45 !important;
+}
+div[data-testid="stMetricValue"] {
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 1.4rem !important; font-weight: 700 !important;
+}
+div[data-testid="stExpander"] {
+    border: 1px solid rgba(128,128,128,0.15) !important;
+    border-radius: 10px !important; overflow: hidden !important;
+}
+div[data-testid="stDataFrame"] {
+    border: 1px solid rgba(128,128,128,0.15) !important;
+    border-radius: 10px !important; overflow: hidden !important;
+}
+section[data-testid="stSidebar"] {
+    border-right: 1px solid rgba(128,128,128,0.12) !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
+
+# ── API key ───────────────────────────────────────────────
 API_KEY = None
-
-# First try local config.py (for local development)
 try:
     from config import api_key
     API_KEY = api_key
-except:
+except Exception:
     pass
-
-# If no local key, try Hugging Face secrets (for cloud deployment)
 if not API_KEY:
     try:
         API_KEY = st.secrets["api_key"]
-        # st.success("✅ Using API key from Hugging Face Secrets")  # ← Optional: remove or keep
-    except:
+    except Exception:
         pass
-
-# If still no key, try environment variable
 if not API_KEY:
     API_KEY = os.environ.get("api_key")
-
-# If no key found, show error
 if not API_KEY:
-    st.error("❌ API key not found!")
-    st.info("Please add your API key in config.py or Hugging Face Secrets")
+    st.error("API key not found. Add it to config.py or Hugging Face Secrets.")
     st.stop()
 
-# Initialize client with API key
 client = genai.Client(api_key=API_KEY)
 
 @st.cache_resource
 def load_embeddings():
     return joblib.load("embeddings_gemini.joblib")
 
-def format_timestamp(seconds):
-    minutes = int(seconds // 60)
-    secs = int(seconds % 60)
-    return f"{minutes}:{secs:02d}"
+def fmt(s):
+    return f"{int(s//60):02d}:{int(s%60):02d}"
 
-# Load embeddings
 try:
     df = load_embeddings()
-    st.success(f"✅ Loaded {len(df)} video chunks")
 except FileNotFoundError:
-    st.error("❌ embeddings_gemini.joblib not found!")
-    st.info("Run: python regenerate_embeddings_gemini.py to create embeddings")
+    st.error("embeddings_gemini.joblib not found. Run regenerate_embeddings_gemini.py first.")
     st.stop()
 except Exception as e:
-    st.error(f"❌ Error loading embeddings: {e}")
+    st.error(f"Error loading embeddings: {e}")
     st.stop()
 
-# Example questions placeholder
-example_questions = [
-    "Where is SSR (Server Side Rendering) taught?",
-    "What is CSS Overflow property?",
-    "How to use useState in React?",
-    "Explain JavaScript Promises",
-    "What is Flexbox and how does it work?"
-]
+# ── Header ────────────────────────────────────────────────
+st.markdown("""
+<div class="rag-header">
+    <p class="rag-title">RAG Video Intelligence</p>
+    <p class="rag-subtitle">Semantic search over 50+ MERN web development tutorials — exact video and timestamp every time.</p>
+</div>
+""", unsafe_allow_html=True)
 
-# Display example questions as buttons
-st.markdown("### 💡 Example Questions")
-cols = st.columns(len(example_questions))
+st.markdown(f"""
+<div class="status-pill">
+    <span class="status-dot"></span>
+    System ready &nbsp;·&nbsp; {len(df):,} chunks &nbsp;·&nbsp; 51 videos &nbsp;·&nbsp; 3,072-dim embeddings
+</div>
+""", unsafe_allow_html=True)
 
-for idx, example in enumerate(example_questions):
-    with cols[idx]:
-        if st.button(example, key=f"ex_{idx}"):
-            st.session_state.query = example
+st.markdown(f"""
+<div class="stats-grid">
+    <div class="stat-box"><div class="stat-val">51</div><div class="stat-lbl">Videos processed</div></div>
+    <div class="stat-box"><div class="stat-val">{len(df):,}</div><div class="stat-lbl">Chunks indexed</div></div>
+    <div class="stat-box"><div class="stat-val">3,072</div><div class="stat-lbl">Embedding dims</div></div>
+</div>
+""", unsafe_allow_html=True)
 
-# Use session state to persist query
+# ── Examples ──────────────────────────────────────────────
+EXAMPLES_SHORT = ["Where is SSR taught?","What is CSS Overflow?","How to use useState?","Explain JS Promises","What is Flexbox?"]
+EXAMPLES_FULL  = ["Where is SSR (Server Side Rendering) taught?","What is CSS Overflow property?","How to use useState in React?","Explain JavaScript Promises","What is Flexbox and how does it work?"]
+
+st.markdown('<p class="sec-label">Try an example</p>', unsafe_allow_html=True)
 if "query" not in st.session_state:
     st.session_state.query = ""
 
-query = st.text_input("Ask a question about web development (MERN):", value=st.session_state.query)
+ecols = st.columns(len(EXAMPLES_SHORT))
+for i,(short,full) in enumerate(zip(EXAMPLES_SHORT,EXAMPLES_FULL)):
+    with ecols[i]:
+        if st.button(short, key=f"ex_{i}"):
+            st.session_state.query = full
+            st.rerun()
+
+st.markdown('<p class="sec-label" style="margin-top:1.25rem">Your question</p>', unsafe_allow_html=True)
+query = st.text_input(label="", value=st.session_state.query,
+    placeholder="e.g. How do I create a responsive navbar using CSS Grid?",
+    label_visibility="collapsed")
 
 if query:
-    with st.spinner("Searching through videos..."):
-        # Create query embedding
-        response = client.models.embed_content(
-            model="gemini-embedding-001",
-            contents=query
-        )
-        q_emb = response.embeddings[0].values
-        
-        # Find similar chunks
-        similarities = cosine_similarity(np.vstack(df['embedding']), [q_emb]).flatten()
-        top_idx = similarities.argsort()[::-1][:10]
+    with st.spinner("Searching…"):
+        resp = client.models.embed_content(model="gemini-embedding-001", contents=query)
+        q_emb = resp.embeddings[0].values
+        sims = cosine_similarity(np.vstack(df["embedding"]), [q_emb]).flatten()
+        top_idx = sims.argsort()[::-1][:10]
         top_chunks = df.iloc[top_idx].copy()
-        top_chunks["similarity_score"] = similarities[top_idx]
-    
-    # Display answer section
-    st.markdown("### 📖 Answer")
-    
-    # Group chunks by video
-    for video_num in top_chunks['Video_num'].unique():
-        video_chunks = top_chunks[top_chunks['Video_num'] == video_num]
-        video_title = video_chunks.iloc[0]['Video_title'].replace("Sigma Web Development Course Tutorial", "").strip()
-        
-        st.markdown(f"**Video {video_num}: {video_title}**")
-        
-        for _, row in video_chunks.iterrows():
-            st.markdown(f"• **{format_timestamp(row['start'])}** - {row['text'][:150]}")
-        
-        st.markdown("")
-    
-    # Show data table
-    st.markdown("---")
-    st.markdown("### 📊 All Matched Chunks")
-    
-    display_data = []
-    for _, row in top_chunks.iterrows():
-        clean_title = row['Video_title'].replace("Sigma Web Development Course Tutorial", "").strip()
-        display_data.append({
-            "Video": row['Video_num'],
-            "Title": clean_title[:40],
-            "Time": format_timestamp(row['start']),
-            "Text": row['text'][:100] + "..." if len(row['text']) > 100 else row['text'],
-            "Relevance": f"{row['similarity_score']*100:.1f}%"
-        })
-    
-    display_df = pd.DataFrame(display_data)
-    st.dataframe(display_df, use_container_width=True, hide_index=True)
-    
-    # Detailed expander
-    with st.expander("🔍 View full text of all chunks"):
-        for _, row in top_chunks.iterrows():
-            st.markdown(f"**Video {row['Video_num']}: {row['Video_title']}**")
-            st.markdown(f"⏱️ **Timestamp:** {format_timestamp(row['start'])} - {format_timestamp(row['end'])}")
-            st.markdown(f"📝 **Text:** {row['text']}")
-            st.markdown(f"📊 **Relevance:** {row['similarity_score']*100:.1f}%")
-            st.markdown("---")
+        top_chunks["score"] = sims[top_idx]
+
+    prompt = f"""You are a teaching assistant for a MERN web development course (Sigma Web Development by CodeWithHarry).
+Here are the top matching video chunks:
+{top_chunks[["Video_title","Video_num","start","end","text"]].to_json(orient="records")}
+Question: {query}
+Give a clear, direct answer. Mention the video number and timestamp (mm:ss) where this is covered.
+2-4 sentences max. Plain text only."""
+
+    with st.spinner("Generating answer…"):
+        llm_out = client.models.generate_content(model="gemini-2.5-flash-lite", contents=prompt)
+
+    st.markdown('<hr class="rag-hr">', unsafe_allow_html=True)
+    st.markdown('<p class="sec-label">Answer</p>', unsafe_allow_html=True)
+    st.markdown(f'<div class="answer-box">{llm_out.text}</div>', unsafe_allow_html=True)
+    st.markdown('<p class="sec-label">Matched video chunks</p>', unsafe_allow_html=True)
+
+    for vid in top_chunks["Video_num"].unique():
+        vc = top_chunks[top_chunks["Video_num"]==vid]
+        title = vc.iloc[0]["Video_title"].replace("Sigma Web Development Course Tutorial","").strip(" -\u2013|:")
+        st.markdown(f'<div class="vid-group"><span class="vid-num">VIDEO {vid}</span><span class="vid-name">{title}</span></div>', unsafe_allow_html=True)
+        for _,row in vc.iterrows():
+            s = row["score"]
+            badge = '<span class="badge-high">High</span>' if s>0.7 else '<span class="badge-med">Moderate</span>' if s>0.4 else '<span class="badge-low">Low</span>'
+            preview = row["text"][:260]+("…" if len(row["text"])>260 else "")
+            st.markdown(f"""
+<div class="chunk">
+<div class="chunk-meta"><span class="ts">{fmt(row["start"])} \u2192 {fmt(row["end"])}</span>{badge}<span class="score-pct">{s*100:.0f}%</span></div>
+<p class="chunk-text">{preview}</p>
+</div>""", unsafe_allow_html=True)
+
+    st.markdown('<hr class="rag-hr">', unsafe_allow_html=True)
+    c1,c2,c3,c4 = st.columns(4)
+    c1.metric("Top match", f"{top_chunks['score'].iloc[0]*100:.0f}%")
+    c2.metric("Videos found", int(top_chunks["Video_num"].nunique()))
+    c3.metric("Chunks retrieved", len(top_chunks))
+    c4.metric("Avg relevance", f"{top_chunks['score'].mean()*100:.0f}%")
+
+    with st.expander("Full chunk table"):
+        tbl = pd.DataFrame([{
+            "Video": r["Video_num"],
+            "Title": r["Video_title"].replace("Sigma Web Development Course Tutorial","").strip(" -\u2013|:")[:38],
+            "Start": fmt(r["start"]), "End": fmt(r["end"]),
+            "Match": f"{r['score']*100:.0f}%",
+            "Preview": r["text"][:100]+"…",
+        } for _,r in top_chunks.iterrows()])
+        st.dataframe(tbl, use_container_width=True, hide_index=True)
+
+    with st.expander("Full chunk text"):
+        for _,r in top_chunks.iterrows():
+            t = r["Video_title"].replace("Sigma Web Development Course Tutorial","").strip(" -\u2013|:")
+            st.markdown(f"**Video {r['Video_num']}: {t}** — `{fmt(r['start'])} \u2192 {fmt(r['end'])}` — {r['score']*100:.0f}%")
+            st.markdown(r["text"])
+            st.markdown('<hr class="rag-hr">', unsafe_allow_html=True)
+
+st.markdown('<div class="rag-footer">RAG Video Intelligence &nbsp;\u00b7&nbsp; Gemini AI + Cosine Similarity &nbsp;\u00b7&nbsp; Built by Swanand Sinnarkar</div>', unsafe_allow_html=True)
