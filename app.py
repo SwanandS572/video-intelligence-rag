@@ -6,6 +6,13 @@ import os
 from google import genai
 from sklearn.metrics.pairwise import cosine_similarity
 
+# ⚠️ MUST BE FIRST - before any other st.xxx commands
+st.set_page_config(page_title="RAG Video Assistant", page_icon="🤖")
+
+# Now you can do other Streamlit commands
+st.title("🤖 RAG Video Intelligence System")
+st.caption("Ask any question — get exact video number and timestamp")
+
 # Get API key - check local config.py FIRST, then HF secrets
 API_KEY = None
 
@@ -13,7 +20,6 @@ API_KEY = None
 try:
     from config import api_key
     API_KEY = api_key
-    # st.success("✅ Using local API key from config.py")
 except:
     pass
 
@@ -21,7 +27,7 @@ except:
 if not API_KEY:
     try:
         API_KEY = st.secrets["api_key"]
-        st.success("✅ Using API key from Hugging Face Secrets")
+        # st.success("✅ Using API key from Hugging Face Secrets")  # ← Optional: remove or keep
     except:
         pass
 
@@ -34,10 +40,6 @@ if not API_KEY:
     st.error("❌ API key not found!")
     st.info("Please add your API key in config.py or Hugging Face Secrets")
     st.stop()
-
-st.set_page_config(page_title="RAG Video Assistant", page_icon="🤖")
-st.title("🤖 RAG Video Intelligence System")
-st.caption("Ask any question — get exact video number and timestamp")
 
 # Initialize client with API key
 client = genai.Client(api_key=API_KEY)
@@ -79,8 +81,7 @@ cols = st.columns(len(example_questions))
 for idx, example in enumerate(example_questions):
     with cols[idx]:
         if st.button(example, key=f"ex_{idx}"):
-            query = example
-            st.session_state.query = query
+            st.session_state.query = example
 
 # Use session state to persist query
 if "query" not in st.session_state:
